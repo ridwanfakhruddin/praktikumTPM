@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar_ketiga"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_upn" />
+    <TextView
+        android:layout_below="@+id/gambar_ketiga"
+        android:id="@+id/teks_ketiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="1dp"
+        android:textSize="31dp"
+        android:text="Email"/>
+    <TextView
+        android:layout_below="@+id/garis_pertama"
+        android:id="@+id/teks_keempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="1dp"
+        android:textSize="31dp"
+        android:text="Password"/>
+    <View
+        android:id="@+id/garis_pertama"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/teks_ketiga"
+        android:layout_height="2dp"
+        android:background="#f00"/>
+    <View
+        android:id="@+id/garis_kedua"
+        android:layout_below="@+id/teks_keempat"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/garis_kedua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="15dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_below="@+id/garis_kedua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="222dp"
+        android:layout_marginBottom="15dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
